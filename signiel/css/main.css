@@ -1,0 +1,647 @@
+@charset "utf-8";
+html, body {
+    height: 100%;
+    overflow-y: hidden
+}
+
+body {
+    position: relative;
+    min-width: 1200px;
+    font-family: "Dotum", "Arial", sans-serif;
+    font-size: 12px;
+    color: #333;
+    background: white
+}
+
+.posNum {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 50px;
+    margin: -25px 0 0 -150px;
+    background: #111;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    z-index: 9999
+}
+
+.scrollBox {
+    min-width: 1200px;
+    height: 100%;
+    position: relative
+}
+
+.scrollBox .wrap {
+    min-width: 1200px;
+    position: relative;
+    overflow: hidden
+}
+
+.scrollBox .wrap > div {
+    position: relative
+}
+
+.scrollBox .wrap .objs > li {
+    position: absolute;
+    left: 50%
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    background: black;
+    position : fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+
+#scene01 {
+    height: 2674px;
+    background: #211b12;
+}
+
+#scene01 .bg{
+    position: absolute;
+}
+
+#scene01 .title01 {
+    position: absolute;
+    top: 53px;
+    left: 196px;
+    transition: all 1s;
+    transform: translateY(50px);
+    opacity : 0;
+}
+
+#scene01 .title01.on {
+    transform: translateY(0);
+    opacity : 1;
+}
+
+#scene01 .title02 {
+    position: absolute;
+    top: 53px;
+    left: 895px;
+    transition: all 1s;
+    transform: translateY(50px);
+    opacity : 0;
+}
+
+#scene01 .title02.on {
+    transform: translateY(0);
+    opacity : 1;
+}
+
+#scene01 .title03 {
+    position: absolute;
+    top: 53px;
+    right: 201px;
+    transition: all 1s;
+    transform: translateY(50px);
+    opacity : 0;
+}
+
+#scene01 .title03.on {
+    transform: translateY(0);
+    opacity : 1;
+}
+
+#scene01 .logo {
+    position: absolute;
+    top: 538px;
+    left: 600px;
+    transition: all 1s;
+    transform: translateY(100px);
+    transition-delay: 0.5s;
+    opacity : 0;
+}
+
+#scene01 .logo.on {
+    transform: translateY(0);
+    opacity : 1;
+}
+
+#video1 {
+    position: absolute;
+    width: 309px;
+    height: 574px;
+    top: 785px;
+    left: 802px;
+    z-index: 100;
+    opacity : 1;
+    transition: all 1.2s;
+    transform: translateY(30px);
+}
+
+
+#scene01 .image .mockup{
+    position: absolute;
+    top: 732px;
+    left: 757px;
+    z-index: 9999;
+}
+
+
+
+#scene01 .text01 {
+    position: absolute;
+    top: 663px;
+    left: 819px;
+}
+
+#scene01 .diagram {
+    position: absolute;
+    top: 1947px;
+    left: 358px;
+}
+
+#scene01 .text {
+    position: absolute;
+    top: 1655px;
+    left: 360px;
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(100px);
+}
+
+#scene01 .text.on {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#scene02 {
+    height: 2170px;
+    background: white;
+}
+
+#scene02 .bg2 {
+    position: absolute;
+}
+
+#scene02 .screen01 {
+    position: absolute;
+    top: 356px;
+    left: 1320px;
+}
+
+#scene02 .screen02 {
+    position: absolute;
+    top: 721px;
+    left: 798px;
+}
+
+#scene02 .screen03 {
+    position: absolute;
+    top: 1161px;
+    left: 300px;
+}
+
+#scene02 .screen04 {
+    position: absolute;
+    top: 1413px;
+    left: 798px;
+}
+
+#scene02 .screen05 {
+    position: absolute;
+    top: 1044px;
+    left: 1320px;
+}
+
+#scene02 .preview {
+    position: absolute;
+    top: 175px;
+    left: 358px;
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(100px);
+}
+
+#scene02 .preview.on {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#scene03 {
+    height: 1019px;
+    background: white;
+}
+
+#scene03 .designassets {
+    position: absolute;
+    top: 162px;
+    left: 358px;
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(100px);
+}
+
+#scene03 .designassets.on {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+#scene03 .color {
+    position: absolute;
+    top: 271px;
+    left: 340px;
+}
+
+#scene03 .image_text {
+    position: absolute;
+    top: 606px;
+    left: 457px;
+}
+
+
+#scene04 {
+    height: 1256px;
+    background: #372d20;
+}
+
+#scene04 .mainscreen {
+    position: absolute;
+    top: 164px;
+    left: 362px;
+}
+
+#scene04 .text07 {
+    position: absolute;
+    top: 221px;
+    left: 359px;
+}
+
+#scene04 .iconbox {
+    position: absolute;
+    width: 317px;
+    height: 202px;
+    top: 522px;
+    left: 888px;
+}
+
+#scene04 .iconbox .icon01 {
+    position: absolute;
+    bottom: 157px;
+    left: 0;
+    width: 66px;
+    height: 0;
+    transition: 0.2s;
+    background-image: url("../images/common/icon01.png");
+    transition-delay: 1s;
+}
+
+#scene04 .iconbox .icon01.on {
+    height: 43px;
+    opacity: 1;
+}
+
+
+#scene04 .iconbox .icon02 {
+    position: absolute;
+    bottom: 117px;
+    left: 60px;
+    width: 66px;
+    height: 0;
+    transition: 0.2s;
+    background-image: url("../images/common/icon02.png");
+    transition-delay: 0.9s;
+}
+
+#scene04 .iconbox .icon02.on {
+    height: 43px;
+    opacity: 1;
+}
+
+
+#scene04 .iconbox .icon03 {
+    position: absolute;
+    bottom: 79px;
+    left: 119px;
+    width: 66px;
+    height: 0;
+    transition: 0.2s;
+    background-image: url("../images/common/icon03.png");
+    transition-delay: 0.7s;
+}
+
+#scene04 .iconbox .icon03.on {
+    height: 44px;
+    opacity: 1;
+}
+
+#scene04 .iconbox .icon04 {
+    position: absolute;
+    bottom: 40px;
+    left: 178px;
+    width: 66px;
+    height: 0;
+    transition: 0.2s;
+    background-image: url("../images/common/icon04.png");
+    transition-delay: 0.5s;
+}
+
+#scene04 .iconbox .icon04.on {
+    height: 43px;
+    opacity: 1;
+}
+
+#scene04 .iconbox .icon05 {
+    position: absolute;
+    bottom: 0;
+    left: 236px;
+    width: 80px;
+    height: 0;
+    background-image: url("../images/common/icon05.png");
+    transition: 0.2s;
+    transition-delay: 0.3s;
+}
+
+#scene04 .iconbox .icon05.on {
+    height: 44px;
+    opacity: 1;
+}
+
+#scene04 .box{
+    position: absolute;
+    width: 190px;
+    height: 951px;
+    top: 161px;
+    left: 1366px;
+}
+
+#scene04 .box>div {
+    margin-bottom: 103px;
+}
+
+#scene04 .mockup02 {
+    position: absolute;
+    top: 505px;
+    left: 173px;
+    transition: all 1s;
+    transform: translateY(200px);
+    opacity : 0;
+}
+
+#scene04 .mockup02.on {
+    transform: translateY(0);
+    opacity : 1;
+}
+
+#scene05 {
+    height: 1411px;
+    background: #f2f2f2;
+}
+
+#scene05 .quickmenu {
+    position: absolute;
+    top: 132px;
+    left: 1187px;
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(100px);
+}
+
+#scene05 .quickmenu.on {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#scene05 .text08 {
+    position: absolute;
+    top: 200px;
+    left: 1187px;
+}
+
+#scene05 .text09 {
+    position: absolute;
+    top: 355px;
+    left: 1187px;
+}
+
+#scene05 .screen06 {
+    position: absolute;
+    top: 694px;
+    left: 0;
+}
+
+#scene05 .screen07 {
+    position: absolute;
+    top: 337px;
+    left: 339px;
+}
+
+#scene05 .screen08 {
+    position: absolute;
+    top: 692px;
+    left: 767px;
+}
+
+#scene05 .screen09 {
+    position: absolute;
+    top: 692px;
+    left: 1196px;
+}
+
+#video4 {
+    position: absolute;
+    width: 319px;
+    height: 592px;
+    top: 667px;
+    left: 1196px;
+}
+
+#scene05 .box {
+    position: absolute;
+    width: 400px;
+    height: 42px;
+    background: #f2f2f2;
+    top: 650px;
+    left: 1150px;
+}
+
+#scene06 {
+    height: 3122px;
+    background: white;
+}
+
+#scene06 .smartroom {
+    position: absolute;
+    top: 160px;
+    left: 351px;
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(100px);
+}
+
+#scene06 .smartroom.on {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#scene06 .iot {
+    position: absolute;
+    top: 592px;
+}
+
+#video3 {
+    position: absolute;
+    width: 321px;
+    height: 596px;
+    top: 480px;
+    left: 798px;
+    z-index: 100;
+    opacity : 1;
+    transition: all 1.2s;
+    transform: translateY(30px);
+    transition-delay: .4s;
+}
+
+#scene06 .image03 .mockup03 {
+    position: absolute;
+    top: 433px;
+    left: 757px;
+    z-index: 9999;
+}
+
+
+#scene06 .circlce {
+    position: absolute;
+    top: 1453px;
+    left: 296px;
+}
+
+#video2 {
+    position: absolute;
+    width: 318px;
+    height: 591px;
+    top: 1902px;
+    left: 731px;
+    z-index: 100;
+    opacity : 1;
+    transition: all 1.2s;
+    transform: translateY(30px);
+    transition-delay: .4s;
+}
+
+#scene06 .image02 .mockup {
+    position: absolute;
+    top: 1854px;
+    left: 686px;
+    z-index: 200;
+}
+
+#scene06 .easybooking {
+    position: absolute;
+    top: 1732px;
+    left: 1148px;
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(100px);
+}
+
+#scene06 .easybooking.on {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+#scene06 .screen10 {
+    position: absolute;
+    top: 1550px;
+    left: 284px;
+}
+
+#scene06 .mini01{
+    position: absolute;
+    top: 2060px;
+    left: 1050px;
+}
+
+#scene06 .mini02{
+    position: absolute;
+    top: 2060px;
+    left: 1267px;
+}
+
+#scene06 .mini03{
+    position: absolute;
+    top: 2060px;
+    left: 1525px;
+}
+
+#scene07 {
+    height: 2880px;
+    background: #f2f2f2;
+}
+
+#scene07 .bg3 {
+    position: absolute;
+    bottom: 0;
+}
+
+#scene07 .screen11 {
+    position: absolute;
+    top: -291px;
+    left: 1316px;
+}
+
+#scene07 .screen12 {
+    position: absolute;
+    top: 158px;
+    left: 954px;
+}
+
+#scene07 .pop01 {
+    position: absolute;
+    top: 1350px;
+    left: 1372px;
+}
+
+#scene07 .pop02 {
+    position: absolute;
+    top: 1350px;
+    left: 1557px;
+}
+
+#scene07 .overview {
+    position: absolute;
+    top: 166px;
+    left: 359px;
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(100px);
+}
+
+#scene07 .overview.on {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#video5 {
+    position: absolute;
+    width: 319px;
+    height: 593px;
+    top: 745px;
+    left: 362px;
+}
+
+#scene07 .image04 .mockup{
+    position: absolute;
+    top: 677px;
+    left: 321px;
+}
+
+#scene08 {
+    height: 1897px;
+    width: 1920px;
+    background-image: url("../images/common/last.png");
+}
+
